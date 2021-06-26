@@ -2,14 +2,16 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
+
 import Home from './Components/Home/Home';
+import Navigation from './Components/Navigation/Navigation';
 
 function App() {
   return (
     <React.Fragment>
-      This is new app Spaceboom.
+      <Navigation />
       <Switch>
-        <Route component={Home}/>
+        <Route exact path='/' component={Home} />
       </Switch>
     </React.Fragment>
   );
