@@ -1,9 +1,10 @@
 import React from 'react';
+import ProjectForm from './ProjectForm/ProjectForm';
 
 const Home = () => {
-    return(
+    return (
         <React.Fragment>
-            This is homepage.
+            <ProjectForm />
         </React.Fragment>
     )
 }

@@ -1,0 +1,40 @@
+.use-shadow {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.SubmitBtn {
+    background-color: #fdbe01;
+    border: 0px;
+    color: black;
+    padding: 15px 30px 15px 30px;
+    border-radius: 0;
+}
+
+.SubmitBtn:hover {
+    background-color: #fdbe01;
+}
+
+.SubmitBtnCol {
+    text-align: right;
+}
+
+.labelUpload {
+    height: 54px;
+    background-color: #fdbe01;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-header {
+    /* background-color: #faaa09; */
+    background-color: #fdbe01;
+    color: white;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .labelUpload {
+        font-size: small;
+    }
+}

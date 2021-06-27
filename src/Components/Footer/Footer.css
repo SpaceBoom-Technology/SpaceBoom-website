@@ -1,0 +1,22 @@
+.footer-main {
+    background-color: #FFD966;
+}
+
+.social-icons {
+    margin-left: 20px;
+}
+
+.fb-icon:hover {
+    color: #4267B2;
+    cursor: pointer;
+}
+
+.google-icon:hover{
+    color: #DB4437;
+    cursor: pointer;
+}
+
+.twitter-icon:hover{
+    color: #1DA1F2;
+    cursor: pointer;
+}

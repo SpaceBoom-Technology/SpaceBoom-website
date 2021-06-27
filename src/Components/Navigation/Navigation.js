@@ -25,7 +25,7 @@ const Navigation = () => {
     const showItems = navData.map((content, id) => {
         const size = isMobile ? "1" : "12";
         return (
-            <Col xs="12" md={size} className="m-auto text-center navitems">
+            <Col xs="12" md={size} className="m-auto text-center navitems" key={id}>
                 <NavLink className=" navitems" to={'/' + navLink[id]}>
                     {content}
                 </NavLink>
