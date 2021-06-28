@@ -7,7 +7,7 @@ import Home from './Components/Home/Home';
 function App() {
   return (
     <React.Fragment>
-      This is new app Spaceboom.
+      
       <Switch>
         <Route component={Home}/>
       </Switch>

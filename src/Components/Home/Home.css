@@ -1,0 +1,116 @@
+/*Container-2 */
+.homepage-container-2-title{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 40px;
+    font-weight: 600;
+    margin-top: 39px;
+}
+
+ .homepage-container-2-text1{
+     margin-top: 50px;
+     margin-bottom: 50px;
+    width: 480px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
+    font-size:large;
+    font-weight: 320;
+}
+.homepage-container-2-title2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 39px;
+    font-weight: 600;
+}
+.homepage-container-2-text2{
+    width: 550px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58em;
+    font-size:large;
+    font-weight: 320;
+
+}
+.homepage-container-2-element{
+ margin-top: 20px;   
+}
+.homepage-container-2-element>img{
+    padding-left: 18%;
+}
+.homepage-container-2-element>.homepage-container-2-element-title{
+    font-weight: 580;
+    font-size: large;
+   
+}
+.homepage-container-2-element>.homepage-container-2-element-text{
+    font-weight: 350;
+}
+/*Container-3*/
+.homepage-container-3-title{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+ .homepage-container-3-text1{
+     
+     margin-bottom: 50px;
+    width: 480px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
+    font-size:large;
+    font-weight: 320;
+}
+.Maincontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    
+}
+.ArrowBtn{
+    cursor:pointer;
+}
+.TopList{
+    margin:10px 5px 0px 5px;
+}
+.cardtitle{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    min-height: 2.8em;
+}
+.carddesc{
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 7.8em;
+    line-height: 1.5em;
+    font-weight: 350;
+    
+    
+}
+.ThumbnailCard{
+    min-height: 560px;
+    max-height:560px ;
+}
+.Shop{
+    background-color: #e9e9e7;
+    min-height: 500px;
+}
+.custom-btn:hover{
+    background-color: #fdbe01;
+    color: black;
+}
