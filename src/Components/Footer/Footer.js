@@ -7,7 +7,7 @@ const Footer = () => {
     const footerLink = ['work', 'services', 'about', 'join', 'blog', 'contact']
     const showItems = footerItems.map((content, idx) => {
         return (
-            <Col xs="4" md="2" className="mb-3">
+            <Col xs="4" md="2" className="mb-3" key={idx}>
                 <a className=" navitems" href={'/' + footerLink[idx]}>
                     {content}
                 </a>
