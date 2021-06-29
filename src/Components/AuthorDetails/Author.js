@@ -6,7 +6,7 @@ const Author = (props) => {
   return (
       <>
       <Col xs="12" md="4">
-          <Card className="ThumbnailCard" >
+          <Card className="ThumbnailCard shadow p-3 mb-5 bg-white rounded "  >
             <CardImg src={props.img}/>
                 <CardTitle className="cardtitle">
                     {props.name}

@@ -66,15 +66,15 @@ const Container3 = () => {
                     <Col md="3" xs="1">
                     </Col>
                     <Col md="1" xs="2" className="ArrowBtn" style={counter>size?{visibility:"visible"}:{visibility:"hidden"}}>
-                        <h1><i className="fas fa-angle-left " onClick={()=>{
+                        <h1><i className="fas fa-angle-left shadow p-3 mb-5 bg-white rounded" onClick={()=>{
                             counter>size?setCounter(counter-1):setCounter(counter)
                         }}></i></h1>
                     </Col>
                     <Col md="4" xs="6" >
                     <hr style={{width:"85%" ,borderBlockStyle:"solid"}}></hr>
                     </Col>
-                    <Col md="1" xs="2" className="ArrowBtn" style={counter<Authors.length?{visibility:"visible"}:{visibility:"hidden"}}>
-                        <h1><i className="fas fa-angle-right" onClick={()=>{
+                    <Col md="1" xs="2" className="ArrowBtn " style={counter<Authors.length?{visibility:"visible"}:{visibility:"hidden"}}>
+                        <h1><i className="fas fa-angle-right shadow p-3 mb-5 bg-white rounded" onClick={()=>{
                             counter<Authors.length?setCounter(counter+1):setCounter(counter)
                         }}></i></h1>
                     </Col>  
