@@ -12,6 +12,7 @@ const Joinus = () => {
         <React.Fragment>
             <Container fluid >
                 <Row style={{backgroundImage:`url(${image})`,height:"500px" , backgroundSize:"cover",opacity:"0.4"}} >
+                    
                 </Row>
 
             </Container>
