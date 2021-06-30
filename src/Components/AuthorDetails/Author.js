@@ -1,7 +1,8 @@
 import React from 'react';
 import '../Home/Home.css';
-import {Container,Col,Row,Card,CardImg,CardTitle,Button,CardBody} from 'reactstrap';
+import { Col, Card, CardImg, CardTitle, CardBody } from 'reactstrap';
 const Author = (props) => {
+
     console.log(props);
   return (
       <>
@@ -17,15 +18,10 @@ const Author = (props) => {
                     {props.desc}
                     </div>
                 </CardBody>
-            
-                
           </Card>
       </Col>
-        
-        
       </>
     
   )
-}
-
+  }
 export default Author;

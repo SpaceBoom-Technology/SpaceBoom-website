@@ -99,10 +99,9 @@
     max-height: 7.8em;
     line-height: 1.5em;
     font-weight: 350;
-    
-    
 }
 .ThumbnailCard{
+    
     min-height: 560px;
     max-height:560px ;
 }

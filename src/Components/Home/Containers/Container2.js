@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../logo192.png';
-import './Home.css';
+import logo from '../../../logo192.png';
+import './../Home.css';
 import {Container,Col,Row} from 'reactstrap';
 const Container2 = () => {
     return(
@@ -18,24 +18,24 @@ const Container2 = () => {
                     <Col md="10">
                     <Row>
                         <Col className="homepage-container-2-element" md="4">
-                        <img src={logo}/>
+                        <img src={logo} alt="none"/>
                         <div className="homepage-container-2-element-line">______</div>
                         <p className="homepage-container-2-element-title">Product Strategy</p>
                         <p className="homepage-container-2-element-text">We analyze your idea or product, establish the requirements and give you a product plan to start or grow your business.</p>
                         </Col>
 
                         <Col className="homepage-container-2-element" md="4"> 
-                        <img src={logo}/>
+                        <img src={logo} alt="none"/>
                         <div className="homepage-container-2-element-line">______</div>
                         <p className="homepage-container-2-element-title">Product Design</p>
                         <p className="homepage-container-2-element-text">We focus on user-centered product design, making sure we tick everything on the product success checklist.</p>
                         </Col>
 
                         <Col className="homepage-container-2-element" md="4">
-                        <img src={logo}/>
+                        <img src={logo} alt="none"/>
                         <div className="homepage-container-2-element-line">______</div>
                         <p className="homepage-container-2-element-title">Product Development</p>
-                        <p class="homepage-container-2-element-text">We do both Android &amp; iOS and cross-platform development, so that we're able to choose the best technology for your product.</p>
+                        <p className="homepage-container-2-element-text">We do both Android &amp; iOS and cross-platform development, so that we're able to choose the best technology for your product.</p>
                         </Col>
                         
                     </Row>

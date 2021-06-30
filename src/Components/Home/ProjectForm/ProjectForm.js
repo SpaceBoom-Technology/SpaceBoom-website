@@ -38,7 +38,7 @@ class ProjectForm extends React.Component {
                         <Col md="12" className="title text-center mb-5 mt-3 fs-4">Ready to discuss your project?</Col>
                         <Col>
                             <Card className="use-shadow">
-                                <CardHeader className="text-center p-4 fs-5 form-header">
+                                <CardHeader className="text-center p-4 fs-4 form-header">
                                     Enter your details
                                 </CardHeader>
                                 <CardBody className="p-5">

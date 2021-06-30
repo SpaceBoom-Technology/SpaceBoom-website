@@ -1,0 +1,20 @@
+
+.cardcarousel{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 20px; 
+    
+}
+
+.carddesc1{
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 11.8em;
+    line-height: 1.5em;
+    font-weight: 350;
+}
