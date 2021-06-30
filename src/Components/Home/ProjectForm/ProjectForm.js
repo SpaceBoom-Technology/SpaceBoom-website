@@ -73,7 +73,7 @@ class ProjectForm extends React.Component {
                             <Input className="p-4 mt-5 mb-5 use-shadow" type="textarea" placeholder="Project description" />
                         </Col>
                         <Col className="mb-5">
-                            <Label for="fileUpload" className="labelUpload">
+                            <Label for="fileUpload" className="SubmitBtn file labelUpload">
                                 <i className="p-2 fas fa-file-upload"></i>
                                 Attach Documentation
                             </Label>

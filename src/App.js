@@ -6,6 +6,7 @@ import Navigation from './Components/Navigation/Navigation';
 import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
 import Joinus from './Components/Joinus/Joinus';
+import ContactUs from './Components/ContactUs/ContactUs';
 import Footer from './Components/Footer/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/services' component={Services} />
         <Route path='/joinus' component={Joinus} />
+        <Route path="/contact" component={ContactUs} />
       </Switch>
       <Footer />
     </React.Fragment>
