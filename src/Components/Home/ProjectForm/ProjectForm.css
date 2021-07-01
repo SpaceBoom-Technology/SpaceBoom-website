@@ -4,15 +4,17 @@
 }
 
 .SubmitBtn {
-    background-color: #fdbe01;
-    border: 0px;
+    /* background-color: #fdbe01; */
+    background-color: #0000;
+    border: 2px solid #fdbe01;
     color: black;
     padding: 15px 30px 15px 30px;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .SubmitBtn:hover {
     background-color: #fdbe01;
+    border: 1px solid #fdbe01;
 }
 
 .SubmitBtnCol {
