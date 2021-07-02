@@ -82,13 +82,14 @@ export const DesignData=[
         heading:"Mobile App functional specifications",
         title:"Listing technical specifications",
         desc:"One of the most important mobile app design services that we offer is a functional specifications document, which fully defines the value and purpose of a mobile app to your product and development teams. This document is key in outlining business logic, listing technical specifications to help you transform an idea into reality.",
-        image:amongUs
+        image:amongUs,
     },
     {
         heading:"Wireframes",
         title:"Drawing the backbone of your app",
         desc:"Wireframes are the backbone of any app design process. Low-fidelity designs that mimic how your app’s user will interact with it, which helps you to create interfaces and user journeys for mapping out an app’s structure in order to see if there is anything missing or not working well enough within its framework. Wireframing ensures that both interface elements as well as a good flow through the entire experience have been thought about before investing too much into coding up prototypes without thinking things through first.",
-        image:amongUs
+        image:amongUs,
+        
     },
     {
         heading:"UX Design",
@@ -109,4 +110,38 @@ export const DesignData=[
         image:amongUs
     }
 
+]
+
+
+export const DevelopmentData=[
+    {
+        heading:"Product Architecture",
+        btnData: "Read More",
+        desc:"We build smart solutions with research-based strategies offering high quality, professional-grade custom product development. Part of our mobile app development solutions is crafting mobile app architecture, to ensure scalability and security, before coding hard-core iOS and Android mobile apps.",
+        image:amongUs
+    },
+    {
+        heading:"iOS Development",
+        btnData: "Read More",
+        desc:"Your dreams can take an app from idea to reality with our team of talented iOS developers. From the ground up, we build your ideas and make them a reality on Apple products by using Swift, a reliable programming language for developing iOS products. We use frameworks that are built in house as well as open source libraries so you know everything is solidified for success!",
+        image:amongUs
+    },
+    {
+        heading:"Android Development",
+        btnData: "Read More",
+        desc:"Google’s Android is the fastest growing mobile operating system. Our team is dedicated to ensuring that your app delivers the perfect experience across all of Android’s devices. You can rely on our resilient, well-developed apps using Kotlin or of the Android programming languages backed by Google.",
+        image:amongUs
+    },
+    {
+        heading:"Cross-Platform Development",
+        btnData: "Read More",
+        desc:"If you want to launch your app fast and test it on both Android and iOS platforms, we recommend going for a cross platform product. Our technology of choice is React Native, as cross platform solutions. We still believe that native implementation works best for the majority of context, however cross platform development works best for some mobile apps if you want it delivered faster and without investing in too much code from the start.",
+        image:amongUs
+    },
+    {
+        heading:"Backend Development",
+        btnData: "Read More",
+        desc:"The back end of your app provides data to your app from a database. If you need user accounts, data shared between users and devices, or if the backend developer needs access to information stored online then they will be required for this role. The programming behind an application is what many people never see - it’s all about making sure that everything runs smoothly with no hiccups in operations “behind the scenes.” This includes writing scripts and processes so that each operation happens seamlessly without any problems arising when there are multiple device connections involved in one setting at once!",
+        image:amongUs
+    }
 ]

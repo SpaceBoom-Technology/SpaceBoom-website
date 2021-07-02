@@ -1,23 +1,39 @@
 import React from 'react';
-import ServiceData from './ServiceData';
-import {  Data1,StrategyHeadData,StrategyData } from './DataJson';
+import DevelopmentData from './DevelopmentData';
+import {  ReactData,ReactTitleData,ReactHeadData } from './DataJson';
 import { Container, Row, Col, Button,Card,CardImg,CardHeader} from 'reactstrap';
 import {Link} from "react-router-dom";
-import "./ourservices.css"
+import "./developmentservices.css"
 
-const Services = () => {
+const ReactDevelopment = () => {
     let align = false;
-    const showServices = StrategyData.map((content, idx) => {
+    const showData = ReactData.map((content, idx) => {
         let tempAlign = align ? 'left' : 'right';
         align = !align;
         return (
-            <ServiceData
+            <DevelopmentData
                 key={idx}
                 id={idx}
                 heading={content.heading}
-                title={content.title}
+                btnData={content.btnData}
                 desc={content.desc}
-                type="body"
+                type="bodydevelopment"
+                alignment={tempAlign}
+                img={content.image}
+            />
+        )
+    })
+    const showTitles = ReactTitleData.map((content, idx) => {
+        let tempAlign = align ? 'left' : 'right';
+        align = !align;
+        return (
+            <DevelopmentData
+                key={idx}
+                id={idx}
+                heading={content.heading}
+                btnData={content.btnData}
+                desc={content.desc}
+                type="bodydevelopment"
                 alignment={tempAlign}
                 img={content.image}
             />
@@ -26,12 +42,12 @@ const Services = () => {
     return (
         <React.Fragment>
             <Container className="mt-5">
-                <ServiceData
-                    heading={StrategyHeadData.heading}
+                <DevelopmentData
+                    heading={ReactHeadData.heading}
                     type="mainHead"
-                    desc={StrategyHeadData.desc}
-                    img={StrategyHeadData.image}
-                    btnData={StrategyHeadData.btnData}
+                    desc={ReactHeadData.desc}
+                    img={ReactHeadData.image}
+                    btnData={ReactHeadData.btnData}
                     alignment="right"
                 />
                 <Row className="text-center bg-light">
@@ -40,29 +56,22 @@ const Services = () => {
                 </Row>
             </Container>
             <Container className="mt-4 mb-4">
-                <ServiceData
-                    heading={Data1.heading}
-                    type="data1"
-                    desc={Data1.desc}
-                    img={Data1.image}
-                    alignment="left"
-                    />
+                {showTitles}
                 <Row>
-                    <Col md="3">
+                    <Col md="2">
                     </Col>
-                    <Col md="6" style={{fontSize:"38px",fontWeight:"bold",textAlign:"center",marginBottom:"100px",marginTop:"40px",backgroundColor:"rgb(243, 243, 243)"}}>
-                    Our process of crafting a strategy that perfectly fits your product
+                    <Col md="8" style={{backgroundColor:"rgb(248, 248, 248)",marginBottom:"50px"}}>
+                    <Col style={{fontSize:"37px",fontWeight:"bold",textAlign:"center",marginBottom:"60px",marginTop:"40px"}}>Our custom mobile app development services</Col>
                     </Col>
-                    <Col md="3">
+                    <Col md="2">
                     </Col>
                 </Row>
-                {showServices}
+                {showData}
                 <Row>
                     <Col md="1">
                     </Col>
                     <Col md="10" className="title text-center " >
-                    Our Android app development services have been used to reach and engage with a number of communities across a range of sectors.
-                    </Col>
+                    Our app development services have been used to reach and engage with a number of communities across a range of sectors.</Col>
                     <Col md="1">
                     </Col>
                 </Row>
@@ -79,8 +88,7 @@ const Services = () => {
                     <Col md="1">
                     </Col>
                     <Col md="10" className="title text-center mb-6" >
-                    We offer digital product solutions for every stage of your business development. You can trust us not only with your product strategy, but also with your product design and product development.
-                    </Col>
+                    We offer digital product solutions for every stage of your business development. You can trust us not only with your product strategy, but also with your product design and product development. </Col>
                     <Col md="1">
                     </Col>
                 </Row>
@@ -89,10 +97,10 @@ const Services = () => {
                 </Row>
                 <Row>
                     <Col md="1"></Col>
-                    <Col md="4">
+                    <Col md="4" >
                     <Link to="/services/product-design">
-                        <Card style={{}}>
-                            <CardImg src={StrategyHeadData.image}>
+                        <Card >
+                            <CardImg src={ReactHeadData.image}>
                             </CardImg>
                             <CardHeader className="text-center fw-bold">
                                 Product Design
@@ -100,26 +108,24 @@ const Services = () => {
                         </Card>
                     </Link>
                     </Col>
-                    
                     <Col md="2" xs="12" style={{height:"80px"}}>
                     </Col>
                    
                     <Col md="4">
-                    <Link to="/services/product-development">
-                    <Card >
-                    <CardImg src={StrategyHeadData.image} />
+                    <Link to="/services/product-strategy">
+                    <Card  >
+                    <CardImg src={ReactHeadData.image} />
                     <CardHeader className="text-center fw-bold">
-                        Product Development
+                        Product Strategy
                     </CardHeader>
                     </Card>
                     </Link>
                     </Col>
                     <Col md="1"></Col>
                 </Row>
-                <Row style={{height:"120px"}}>
-
+                <Row style={{height:"100px"}}>
                 </Row>
-                <Row className="text-center mt-5 mb-5">
+                <Row className="text-center mt-4 mb-5">
                     <Col md="12" className="fs-1 fw-bold mb-5">
                     Ready to bring your app idea to life?
                     </Col>
@@ -133,4 +139,4 @@ const Services = () => {
     )
 }
 
-export default Services;
+export default ReactDevelopment;

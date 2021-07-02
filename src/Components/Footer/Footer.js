@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const Footer = () => {
     const footerItems = ['WORK', 'SERVICES', 'ABOUT US', 'JOIN US', 'BLOG', 'CONTACT']
-    const footerLink = ['work', 'services', 'about', 'join', 'blog', 'contact']
+    const footerLink = ['work', 'services', 'about', 'joinus', 'blog', 'contact']
     const showItems = footerItems.map((content, idx) => {
         return (
             <Col xs="4" md="2" className="mb-3" key={idx}>

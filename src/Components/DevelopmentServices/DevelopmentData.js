@@ -1,9 +1,8 @@
 import React from 'react';
 import { Row, Col,Button } from 'reactstrap';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import "./ourservices.css"
-const ServiceData = (props) => {
+import "./developmentservices.css"
+const DevelopmentData = (props) => {
     const isMobile = useSelector(state => state.isMobile)
     return (
         <React.Fragment>
@@ -21,7 +20,6 @@ const ServiceData = (props) => {
                     </div>
                     <Col md="12" className={"mt-1 mb-5 fw-bold " + props.type}>{props.heading}</Col>
                     <Col md="12" className="fs-5 mb-5 desc" style={{fontSize:"38px"}} > {props.desc}</Col>
-                    
                     </Row>
                 </Col>
                 {props.alignment === 'right' || !isMobile ?
@@ -64,28 +62,9 @@ const ServiceData = (props) => {
                     <Col md="12" className={"mt-1 mb-1 fw-bold " + props.type}>{props.heading}</Col>
                     <Col md="12"  className="mt-1 mb-1  " style={{fontSize:"26px"}}>{props.title}</Col>
                     <Col md="12" className="fs-5 mb-1 desc" > {props.desc}</Col>
-                    {props.type==="bodydevelopment"?
-                    <>
-                    {props.id==1?
-                    <Link to="/services/iosdevelopment">
+                    {props.type==="bodydevelopment" && (props.id===1||props.id===2||props.id===3)?
                     <Col md="12" className="mt-1 mb-3 SubmitBtn" style={{maxWidth:"200px",marginLeft:"15px"}}>{props.btnData}</Col>
-                    </Link>
                     :null}
-                    {props.id==2?
-                        <Link to="/services/androiddevelopment">
-                        <Col md="12" className="mt-1 mb-3 SubmitBtn" style={{maxWidth:"200px",marginLeft:"15px"}}>{props.btnData}</Col>
-                        </Link>
-                        :null
-                    }
-                    {props.id==3?
-                        <Link to="/services/reactdevelopment">
-                        <Col md="12" className="mt-1 mb-3 SubmitBtn" style={{maxWidth:"200px",marginLeft:"15px"}}>{props.btnData}</Col>
-                        </Link>
-                        :null
-                    }
-                    </>
-                    :null
-                    }
                    
                     </Row>
                 </Col>
@@ -112,4 +91,4 @@ const ServiceData = (props) => {
     )
 }
 
-export default ServiceData;
+export default DevelopmentData;

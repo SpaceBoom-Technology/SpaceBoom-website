@@ -3,6 +3,7 @@ import ServiceData from './Elem/ServiceData';
 import { data, mainHeadData } from './DataJson';
 import { Container, Row, Col, Button } from 'reactstrap';
 import AuthorCarousel from '../Home/AuthorCarousel/AuthorCarousel';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     let align = false;
@@ -12,6 +13,7 @@ const Services = () => {
         return (
             <ServiceData
                 key={idx}
+                id={idx}
                 heading={content.heading}
                 desc={content.desc}
                 type="normalHead"
@@ -50,9 +52,11 @@ const Services = () => {
                         Unsure about what technology would better suit your business? We can consult you on the best technology for your particular app idea.
                     </Col>
                     <Col>
-                        <Button className="SubmitBtn mb-5">
+                    <Link to="/contact">
+                        <Button className="SubmitBtn mb-5" >
                             Get in touch
                         </Button>
+                    </Link>
                     </Col>
                 </Row>
             </Container>

@@ -42,7 +42,7 @@ const Design = () => {
                     type="data1"
                     desc={Data3.desc}
                     img={Data3.image}
-                    alignment="left"
+                    alignment="right"
                     />
                     <Row className="text-center ">
                     <Col md="1">
@@ -74,7 +74,7 @@ const Design = () => {
                     <Row>
                     <Col md="3">
                     </Col>
-                    <Col md="6" style={{backgroundColor:"rgb(238, 241, 241)",fontSize:"42px",fontWeight:"650",height:"100px"}} className="mt-5 text-center" >
+                    <Col md="6" style={{backgroundColor:"rgb(250, 250, 250)",fontSize:"42px",fontWeight:"650",height:"100px"}} className="mt-5 text-center" >
                       <div style={{marginTop:"30px"}}> Other Services </div>  </Col>
                     <Col md="3">
                     </Col>
@@ -108,8 +108,7 @@ const Design = () => {
                     </Link>
                     </Col>
                     
-                    <Col md="2">
-                        
+                    <Col md="2" xs="12" style={{height:"80px"}}>
                     </Col>
                    
                     <Col md="4">
@@ -124,15 +123,15 @@ const Design = () => {
                     </Col>
                     <Col md="1"></Col>
                 </Row>
+                <Row style={{height:"120px"}}>
+                </Row>
                 <Row className="text-center mt-5 mb-5">
                     <Col md="12" className="fs-1 fw-bold mb-5">
                     Ready to bring your app idea to life?
                     </Col>
                     
                     <Col>
-                        <Button className="SubmitBtn mb-5">
-                            Let's Talk
-                        </Button>
+                    <Link to="/contact"><Button className="mt-4 mb-5 SubmitBtn">Lets Talk</Button></Link>
                     </Col>
                 </Row>
             </Container>

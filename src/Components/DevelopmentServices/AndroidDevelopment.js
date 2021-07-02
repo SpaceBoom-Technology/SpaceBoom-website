@@ -1,17 +1,49 @@
 import React from 'react';
-import ServiceData from './ServiceData';
-import {  Data3,DevelopmentHeadData,DevelopmentData } from './DataJson';
+import DevelopmentData from './DevelopmentData';
+import {  AndroidData,AndroidTitleData,AndroidHeadData,AndroidBodyData } from './DataJson';
 import { Container, Row, Col, Button,Card,CardImg,CardHeader} from 'reactstrap';
 import {Link} from "react-router-dom";
-import "./ourservices.css"
+import "./developmentservices.css"
 
-const Design = () => {
+const ReactDevelopment = () => {
     let align = false;
-    const showServices = DevelopmentData.map((content, idx) => {
+    const showServices = AndroidData.map((content, idx) => {
         let tempAlign = align ? 'left' : 'right';
         align = !align;
         return (
-            <ServiceData
+            <DevelopmentData
+                key={idx}
+                id={idx}
+                heading={content.heading}
+                btnData={content.btnData}
+                desc={content.desc}
+                type="bodydevelopment"
+                alignment={tempAlign}
+                img={content.image}
+            />
+        )
+    })
+    const showTitles = AndroidTitleData.map((content, idx) => {
+        let tempAlign = align ? 'left' : 'right';
+        align = !align;
+        return (
+            <DevelopmentData
+                key={idx}
+                id={idx}
+                heading={content.heading}
+                btnData={content.btnData}
+                desc={content.desc}
+                type="bodydevelopment"
+                alignment={tempAlign}
+                img={content.image}
+            />
+        )
+    })
+    const showbodydata = AndroidBodyData.map((content, idx) => {
+        let tempAlign = align ? 'left' : 'right';
+        align = !align;
+        return (
+            <DevelopmentData
                 key={idx}
                 id={idx}
                 heading={content.heading}
@@ -26,12 +58,12 @@ const Design = () => {
     return (
         <React.Fragment>
             <Container className="mt-5">
-                <ServiceData
-                    heading={DevelopmentHeadData.heading}
+                <DevelopmentData
+                    heading={AndroidHeadData.heading}
                     type="mainHead"
-                    desc={DevelopmentHeadData.desc}
-                    img={DevelopmentHeadData.image}
-                    btnData={DevelopmentHeadData.btnData}
+                    desc={AndroidHeadData.desc}
+                    img={AndroidHeadData.image}
+                    btnData={AndroidHeadData.btnData}
                     alignment="right"
                 />
                 <Row className="text-center bg-light">
@@ -40,13 +72,24 @@ const Design = () => {
                 </Row>
             </Container>
             <Container className="mt-4 mb-4">
-                <ServiceData
-                    heading={Data3.heading}
-                    type="data1"
-                    desc={Data3.desc}
-                    img={Data3.image}
-                    alignment="left"
-                    />
+                {showTitles}
+                <Row >
+                    <Col md="3">
+                    </Col>
+                    <Col md="6" style={{backgroundColor:"rgb(250, 250, 250)",fontSize:"46px",fontWeight:"580"}} className="mt-5 text-center " >
+                    Our Android app development process
+                    </Col>
+                    <Col md="3">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md="1">
+                    </Col>
+                    <Col md="10" className="title text-center mb-6" >
+                    Our aim is to turn your idea into a top-notch android mobile application through a thorough android app development process; in which we deliver perfection at every stage. </Col>
+                    <Col md="1">
+                    </Col>
+                </Row>
                 <Row>
                     <Col md="2">
                     </Col>
@@ -61,7 +104,7 @@ const Design = () => {
                     <Col md="1">
                     </Col>
                     <Col md="10" className="title text-center " >
-                    Our app development services have been used to reach and engage with a number of communities across a range of sectors.</Col>
+                    Our Android app development services have been used to reach and engage with a number of communities across a range of sectors.</Col>
                     <Col md="1">
                     </Col>
                 </Row>
@@ -69,7 +112,7 @@ const Design = () => {
                     <Col md="3">
                     </Col>
                     <Col md="6" style={{backgroundColor:"rgb(250, 250, 250)",fontSize:"46px",fontWeight:"580"}} className="mt-5 text-center " >
-                   Other Services
+                    Our Android app development process
                     </Col>
                     <Col md="3">
                     </Col>
@@ -78,43 +121,15 @@ const Design = () => {
                     <Col md="1">
                     </Col>
                     <Col md="10" className="title text-center mb-6" >
-                    We offer digital product solutions for every stage of your business development. You can trust us not only with your product development, but also with your product strategy and product design. </Col>
+                    Our aim is to turn your idea into a top-notch Android mobile application through a thorough Android app development process; in which we deliver perfection at every stage. </Col>
                     <Col md="1">
                     </Col>
                 </Row>
                 <Row style={{height:"80px"}}>
-
-                </Row>
-                <Row>
-                    <Col md="1"></Col>
-                    <Col md="4" >
-                    <Link to="/services/product-design">
-                        <Card >
-                            <CardImg src={DevelopmentHeadData.image}>
-                            </CardImg>
-                            <CardHeader className="text-center fw-bold">
-                                Product Design
-                            </CardHeader>
-                        </Card>
-                    </Link>
-                    </Col>
-                    <Col md="2" xs="12" style={{height:"80px"}}>
-                    </Col>
-                   
-                    <Col md="4">
-                    <Link to="/services/product-strategy">
-                    <Card  >
-                    <CardImg src={DevelopmentHeadData.image} />
-                    <CardHeader className="text-center fw-bold">
-                        Product Strategy
-                    </CardHeader>
-                    </Card>
-                    </Link>
-                    </Col>
-                    <Col md="1"></Col>
                 </Row>
                 <Row style={{height:"100px"}}>
                 </Row>
+                {showbodydata}
                 <Row className="text-center mt-4 mb-5">
                     <Col md="12" className="fs-1 fw-bold mb-5">
                     Ready to bring your app idea to life?
@@ -129,4 +144,4 @@ const Design = () => {
     )
 }
 
-export default Design;
+export default ReactDevelopment;

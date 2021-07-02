@@ -2,7 +2,7 @@
     font-size:40px;
 }
 .desc{
-    font-weight: 320;
+    font-weight: 350;
     opacity:0.8;
 }
 .body{
@@ -10,5 +10,9 @@
 }
 .title{
     font-size: 27px;
-    font-weight: 400;
+    font-weight: 360;
+}
+.bodydevelopment{
+    font-size: 27px;
+    font-weight: 500;
 }

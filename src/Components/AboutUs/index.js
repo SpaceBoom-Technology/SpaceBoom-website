@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Button,Card } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import { HeadData ,Values,Team} from './Aboutdata/DataJson'; 
 import AboutData from './Aboutdata/AboutData';
+import { Link } from 'react-router-dom';
 const AboutUs = () => {
     const showValues = Values.map((content, idx) => {
         return (
@@ -68,10 +69,9 @@ const AboutUs = () => {
                     <Col md="12" className="fs-1 fw-bold mb-5">Ready To discuss your project?
                     </Col>
                     <Col>
-                    
-                    <Button className="SubmitBtn mb-5">
-                                Get in Touch
-                    </Button>
+                    <Link to="/contact">
+                        <Button className="mt-4 mb-5 SubmitBtn">Get in Touch</Button>
+                    </Link>
                     </Col>    
                 </Row>
             </Container>
