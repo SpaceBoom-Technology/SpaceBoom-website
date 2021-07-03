@@ -24,8 +24,8 @@ class Navigation extends React.Component {
     }
 
     render() {
-        const navData = ['WORK', 'SERVICES', 'ABOUT US', 'JOIN US', 'BLOG', 'BOOK', 'CONTACT']
-        const navLink = ['work', 'services', 'about', 'joinus', 'blog', 'book', 'contact']
+        const navData = ['WORK', 'SERVICES', 'ABOUT US', 'JOIN US', 'BLOG', 'CONTACT']
+        const navLink = ['work', 'services', 'about', 'joinus', 'blog', 'contact']
         const showItems = navData.map((content, id) => {
             const size = this.props.isMobile ? "1" : "12";
             return (

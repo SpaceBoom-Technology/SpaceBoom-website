@@ -1,25 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 .use-shadow {
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.SubmitBtn {
-    /* background-color: #fdbe01; */
+/* .SubmitBtn {
     background-color: #0000;
     border: 2px solid #fdbe01;
     color: black;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
-}
+} */
 
-.SubmitBtn:hover {
+/* .SubmitBtn:hover {
     background-color: #fdbe01;
     border: 1px solid #fdbe01;
-}
+} */
 
 .SubmitBtnCol {
     text-align: right;
 }
+
+/*  */
+
+.SubmitBtn {
+    position: relative;
+    background-color: #0000;
+    left: 0;
+    top: 0;
+    transform: translate(-0, -0);
+    color: #fdbe01;
+    font-size: 20px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid #fdbe01;
+    transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+.SubmitBtn::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #fdbe01;
+    transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.SubmitBtn::after {
+    content: "";
+    display: inline-block;
+    background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
+    position: absolute;
+    top: 0;
+    left: calc(100% - 3em);
+    right: 3em;
+    bottom: 0;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+.SubmitBtn:hover {
+    padding: 0.5em 3.5em 0.5em 0.5em;
+    background-color: #0000;
+    color: black;
+}
+
+.SubmitBtn:hover::before {
+    left: calc(100% - 3em);
+    right: 0;
+    transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+.SubmitBtn:hover::after {
+    right: 0;
+    transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+/*  */
 
 .labelUpload {
     /* height: 54px;
@@ -38,5 +102,8 @@
 @media (max-width: 768px) {
     .labelUpload {
         font-size: small;
+    }
+    .SubmitBtn {
+        font-size: smaller;
     }
 }
