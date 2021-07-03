@@ -2,6 +2,7 @@ import './ServiceData.css';
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const ServiceData = (props) => {
     const isMobile = useSelector(state => state.isMobile)
@@ -32,7 +33,15 @@ const ServiceData = (props) => {
                         {points}
                     </Row>
                     <Col md="12">
-                        <Button className="mt-4 mb-5 SubmitBtn">{props.btnData}</Button>
+                        
+                        {props.type==="mainHead"?<Link to="/contact"><Button className="mt-4 mb-5 SubmitBtn">{props.btnData}</Button></Link>
+                        :
+                        props.id===0?<Link to="/services/product-strategy"><Button className="mt-4 mb-5 SubmitBtn">{props.btnData}</Button></Link>
+                        :
+                        props.id===1?<Link to="/services/product-design"><Button className="mt-4 mb-5 SubmitBtn">{props.btnData}</Button></Link>
+                        :
+                        props.id==2?<Link to="/services/product-development"><Button className="mt-4 mb-5 SubmitBtn">{props.btnData}</Button></Link>:null}
+                        
                     </Col>
                 </Col>
                 {props.alignment === 'right' || !isMobile ?

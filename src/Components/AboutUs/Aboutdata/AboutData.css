@@ -1,0 +1,15 @@
+.Head{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.values{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 350;
+}
+.desc1{
+    display: block;/* or inline-block */
+    font-weight: 300;
+    text-align: center;
+}
