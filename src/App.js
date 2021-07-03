@@ -11,6 +11,7 @@ import AddBlog from './Components/Blog/AddBlog';
 import ShowBlog from './Components/Blog/ShowBlog';
 import Footer from './Components/Footer/Footer';
 import BlogPage from './Components/Blog/BlogPage';
+import Work from './Components/Work/Work';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/addblog" component={AddBlog} />
         <Route exact path="/blog" component={ShowBlog} />
         <Route path="/blog/:id" component={BlogPage} />
+        <Route path="/work" component={Work} />
       </Switch>
       <Footer />
     </React.Fragment>
